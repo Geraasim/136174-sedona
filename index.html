@@ -3,31 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#"></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="left"><a href="#">Информация</a></li>
+          <li class="left"><a href="#">Фото и видео</a></li>
+          <li class="center"><a href="#"></a></li>
+          <li class="right"><a href="#">Карта штата</a></li>
+          <li class="right"><a href="hotels.html">Гостиницы</a></li>
         </ul>
-        <div class="logo"><img src="img/logo.png" width="65" height="55" alt="sedona"></a></div>
+        <div class="logo"><img src="img/logo.png" width="138" height="70" alt="sedona"></div>
       </nav>
     </header>
     <main>
       <div class="promo">
         <div class="promo-picture">
-          
+          <!-- <div class="promo-welcome"></div> -->
         </div>
         <div class="promo-slogan">
           <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         </div>
       </div>
-      <div class="advantage">
+      <div class="advantage-header">
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+      </div>
+      <div class="advantage">
         <div class="advantage-item advantage-blue">
           <h3>Настоящий городок</h3>
           <p>&ndash; № 1 &ndash;</p>
@@ -36,15 +41,18 @@
         <div class="advantage-picture1"></div>
       </div>
       <section class="residence">
-        <div class="residence-item hotels">
+        <div class="residence-item">
+          <div class="hotels"></div>
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="residence-item food">
+        <div class="residence-item">
+          <div class="food"></div>
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="residence-item souvenirs">
+        <div class="residence-item">
+          <div class="souvenirs"></div>
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </div>
@@ -75,26 +83,30 @@
         </div>
       </div>
       <section class="variety">
-          <h3>Заинтересовались?</h3>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="search" href="#">Поиск гостиницы в Седоне</a>
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="search"><a href="#">Поиск гостиницы в Седоне</a></div>
         <div class="map">
-          <a class="js-open-map" href="#"><img src="img/map.png" width="1200" height="593" alt="map"></a>
+          <a class="js-open-map" href="#"><img src="img/map.jpg" width="1200" height="593" alt="map"></a>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-index">
       <div class="hashtag">
         <a href="index.html"><span>#VisitSedona</span></a>
       </div>
       <div class="social">
-        <a class="social-twitter" href="#"><span class="icon-twitter"></span></a>
-        <a class="social-facebook" href="#"><span class="icon-facebook"></span></a>
-        <a class="social-youtube" href="#"><span class="icon-youtube"></span></a>
+        <div class="social-block">
+          <a class="social-twitter" href="#"><span class="icon-twitter"></span></a>
+          <a class="social-facebook" href="#"><span class="icon-facebook"></span></a>
+          <a class="social-youtube" href="#"><span class="icon-youtube"></span></a>
+        </div>
       </div>
       <div class="development">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/"><img src="img/logo html academy.png" width="113" height="39" alt="html academy"></a>
+        <div class="development-block">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/"></a>
+        </div>
       </div>
     </footer>
     <div class="modal-search">

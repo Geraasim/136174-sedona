@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="index.html"></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="left"><a href="#">Информация</a></li>
+          <li class="left"><a href="#">Фото и видео</a></li>
+          <li class="center"><a href="#"></a></li>
+          <li class="right"><a href="#">Карта штата</a></li>
+          <li class="right"><a href="#">Гостиницы</a></li>
         </ul>
-        <div class="logo"><img src="img/logo.png" width="138" height="70" alt="sedona"></a></div>
+        <div class="logo"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="sedona"></a></div>
       </nav>
     </header>
     <main>
@@ -81,7 +84,7 @@
       </div>
       <section class="hotels">
         <article>
-          <img src="img/amara resort & spa.png" width="135" height="90" alt="Amara resort & spa">
+          <img src="img/amara resort & spa.jpg" width="135" height="90" alt="Amara resort & spa">
           <div class="hotel-info">
             <h1><a href="#">Amara resort &amp; spa</a></h1>
             <span class="hotel-type">Гостиница</span>
@@ -100,9 +103,9 @@
           </div>
         </article>
         <article>
-          <img src="img/desert qual inn.png" width="135" height="90" alt="Desert qual inn">
+          <img src="img/desert qual inn.jpg" width="135" height="90" alt="Desert qual inn">
           <div class="hotel-info">
-            <h1><a href="#">Desert qual inn</a></h1>
+            <a href="#"><h1>Desert qual inn</h1></a>
             <span class="hotel-type">Мотель</span>
             <span class="price">От 2000 р.</span>
             <a class="details" href="#">Подробнее</a>
@@ -117,7 +120,7 @@
           </div>
         </article>
         <article>
-          <img src="img/villas at poco diablo.png" width="135" height="90" alt="Villas at poco diablo">
+          <img src="img/villas at poco diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
           <div class="hotel-info">
             <h1><a href="#">Villas at poco diablo</a></h1>
             <span class="hotel-type">Апартаменты</span>
@@ -141,13 +144,17 @@
         <a href="index.html"><span>#VisitSedona</span></a>
       </div>
       <div class="social">
-        <a class="social-twitter" href="#"><span class="icon-twitter"></span></a>
-        <a class="social-facebook" href="#"><span class="icon-facebook"></span></a>
-        <a class="social-youtube" href="#"><span class="icon-youtube"></span></a>
+        <div class="social-block">
+          <a class="social-twitter" href="#"><span class="icon-twitter"></span></a>
+          <a class="social-facebook" href="#"><span class="icon-facebook"></span></a>
+          <a class="social-youtube" href="#"><span class="icon-youtube"></span></a>
+        </div>
       </div>
       <div class="development">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/"><img src="img/logo html academy.png" width="113" height="39" alt="html academy"></a>
+        <div class="development-block">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/"></a>
+        </div>
       </div>
     </footer>
   </body>
