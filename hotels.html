@@ -8,14 +8,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
     <header>
       <nav>
         <ul>
-          <li class="left"><a href="#">Информация</a></li>
-          <li class="left"><a href="#">Фото и видео</a></li>
-          <li class="center"><a href="#"></a></li>
-          <li class="right"><a href="#">Карта штата</a></li>
-          <li class="right"><a href="#">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a class="active">Гостиницы</a></li>
         </ul>
         <div class="logo"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="sedona"></a></div>
       </nav>
@@ -44,21 +44,22 @@
           <div class="price">
             <h2>Стоимость в сутки (p):</h2>
             <div class="range-filter">
+
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input name="min-price" type="text" value="0">
+                </label>
+                <span>|</span>
+                <label class="max-price">
+                  до <input name="max-price" type="text" value="3000">
+                </label>
+              </div>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="margin-left: 0; width: 80%"></div>
                 </div>
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  <input name="min-price" type="text" value="от 0">
-                </label>
-                <span>|</span>
-                <label class="max-price">
-                  <input name="max-price" type="text" value="до 3000">
-                </label>
               </div>
             </div>
             <button type="submit">Показать</button>
@@ -71,26 +72,34 @@
         </div>
         <div class="sorting-type">
           <span>Сортировка:</span>
-          <ul class="sorting-type">
-            <li><a class="choice" href="#">по цене</a></li>
+          <ul>
+            <li><a class="active" href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
           </ul>
-          <ul class="up-down">
+        </div>
+        <div class="up-down">
+          <ul>
             <li><a href="#"><span class="icon-up-dir"></span></a></li>
-            <li><a href="#"><span class="icon-down-dir choice"></span></a></li>
+            <li><a href="#"><span class="icon-down-dir active"></span></a></li>
           </ul>
         </div>
       </div>
       <section class="hotels">
         <article>
-          <img src="img/amara resort & spa.jpg" width="135" height="90" alt="Amara resort & spa">
+          <img src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Amara_resort_and_spa">
           <div class="hotel-info">
             <h1><a href="#">Amara resort &amp; spa</a></h1>
-            <span class="hotel-type">Гостиница</span>
-            <span class="price">От 3500 р.</span>
-            <a class="details" href="#">Подробнее</a>
-            <a class="reserve" href="#">Забронировать</a>
+            <div class="details-hotel-info">
+              <div class="left-hotel-info">
+                <span class="hotel-type">Гостиница</span>
+                <a class="details" href="#">Подробнее</a>
+              </div>
+              <div class="right-hotel-info">
+                <span class="price">От 3500 р.</span>
+                <a class="reserve" href="#">Забронировать</a>
+              </div>
+            </div>
           </div>
           <div class="rating">
             <div class="stars">
@@ -103,13 +112,19 @@
           </div>
         </article>
         <article>
-          <img src="img/desert qual inn.jpg" width="135" height="90" alt="Desert qual inn">
+          <img src="img/desert_qual_inn.jpg" width="135" height="90" alt="Desert_qual_inn">
           <div class="hotel-info">
-            <a href="#"><h1>Desert qual inn</h1></a>
-            <span class="hotel-type">Мотель</span>
-            <span class="price">От 2000 р.</span>
-            <a class="details" href="#">Подробнее</a>
-            <a class="reserve" href="#">Забронировать</a>
+            <h1><a href="#">Desert qual inn</a></h1>
+            <div class="details-hotel-info">
+              <div class="left-hotel-info">
+                <span class="hotel-type">Мотель</span>
+                <a class="details" href="#">Подробнее</a>
+              </div>
+              <div class="right-hotel-info">
+                <span class="price">От 2000 р.</span>
+                <a class="reserve" href="#">Забронировать</a>
+              </div>
+            </div>
           </div>
           <div class="rating">
             <div class="stars">
@@ -120,13 +135,19 @@
           </div>
         </article>
         <article>
-          <img src="img/villas at poco diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
+          <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas_at_poco_diablo">
           <div class="hotel-info">
             <h1><a href="#">Villas at poco diablo</a></h1>
-            <span class="hotel-type">Апартаменты</span>
-            <span class="price">От 4000 р.</span>
-            <a class="details" href="#">Подробнее</a>
-            <a class="reserve" href="#">Забронировать</a>
+            <div class="details-hotel-info">
+              <div class="left-hotel-info">
+                <span class="hotel-type">Апартаменты</span>
+                <a class="details" href="#">Подробнее</a>
+              </div>
+              <div class="right-hotel-info">
+                <span class="price">От 4000 р.</span>
+                <a class="reserve" href="#">Забронировать</a>
+              </div>
+            </div>
           </div>
           <div class="rating">
             <div class="stars">
@@ -157,5 +178,6 @@
         </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>

@@ -8,14 +8,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
     <header>
       <nav>
         <ul>
-          <li class="left"><a href="#">Информация</a></li>
-          <li class="left"><a href="#">Фото и видео</a></li>
-          <li class="center"><a href="#"></a></li>
-          <li class="right"><a href="#">Карта штата</a></li>
-          <li class="right"><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
         <div class="logo"><img src="img/logo.png" width="138" height="70" alt="sedona"></div>
       </nav>
@@ -35,7 +35,7 @@
       <div class="advantage">
         <div class="advantage-item advantage-blue">
           <h3>Настоящий городок</h3>
-          <p>&ndash; № 1 &ndash;</p>
+          <span>&ndash; № 1 &ndash;</span>
           <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="advantage-picture1"></div>
@@ -61,24 +61,24 @@
         <div class="advantage-picture2"></div>
         <div class="advantage-item advantage-blue">
           <h3>Там есть Мост Дьявола</h3>
-          <p>&ndash; № 2 &ndash;</p>
+          <span>&ndash; № 2 &ndash;</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="advantage">
         <div class="advantage-item advantage-grey">
           <h3>Небольшая площадь</h3>
-          <p>&ndash; № 3 &ndash;</p>
+          <span>&ndash; № 3 &ndash;</span>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="advantage-item advantage-grey">
           <h3>Красивая дорога</h3>
-          <p>&ndash; № 4 &ndash;</p>
+          <span>&ndash; № 4 &ndash;</span>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="advantage-item advantage-grey">
           <h3>Мало туристов</h3>
-          <p>&ndash; № 5 &ndash;</p>
+          <span>&ndash; № 5 &ndash;</span>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </div>
@@ -103,10 +103,7 @@
         </div>
       </div>
       <div class="development">
-        <div class="development-block">
-          <span>Website by</span>
-          <a href="https://htmlacademy.ru/"></a>
-        </div>
+        <a class="link-htmlacademy" href="https://htmlacademy.ru/"><span>Website by<span class="logo-htmlacademy"></span></span></a>
       </div>
     </footer>
     <div class="modal-search">
@@ -118,5 +115,6 @@
         <button class="button" type="submit">Найти</button>
       </form>
     </div>
+  </div>
   </body>
 </html>
