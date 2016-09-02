@@ -340,7 +340,8 @@ p {
 
 }
 
-.search {
+.variety .search {
+  position: relative;
   width: 570px;
   min-height: 56px;
   /*height: 56px;*/
@@ -352,7 +353,7 @@ p {
   margin-bottom: 0;
 }
 
-.search a {
+.variety a {
   text-decoration: none;
   color: #ffffff;
 
@@ -525,11 +526,95 @@ footer {
   /*height: 39px;*/
 /*}*/
 
-.modal-search {
-  display: none;
+.modal-search form {
+  /*display: none;*/
+  position: absolute;
+  /*bottom: 593px;*/
+  top: 86px;
+  width: 460px;
+  min-height: 285px;
+  padding: 55px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+
 }
 
+.modal-search .button {
+  /*margin: 55px 0;*/
+  margin-top: 25px;
+  display: block;
+  width: 460px;
+  height: 60px;
 
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background: #81b3d2;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  outline: none;
+}
+
+.modal-search .proposal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.proposal div {
+  width: 460px;
+  margin-bottom: 30px;
+
+  text-align: left;
+
+}
+
+.proposal .adults {
+  width: 225px;
+}
+
+.proposal .kids {
+  width: 180px;
+}
+
+.arrival input,
+.departure input {
+  /*position: relative;*/
+  width: 345px;
+  background: #f2f2f2;
+  outline: none;
+}
+
+.proposal label {
+  position: relative;
+}
+
+span.calendar::before {
+  position: absolute;
+  top: 0;
+  /*left: 314px;*/
+  right: 10px;
+  display: inline-flex;
+  width: 21px;
+  height: 22px;
+  content: "\e800";
+  font-family: "symbols-sedona";
+
+  color: #c2c2c2;
+  font-size: 21px;
+  /*line-height: 26px;*/
+  vertical-align: middle;
+
+}
+
+.adults input,
+.kids input,
+.proposal .kids-label {
+  width: 114px;
+  background: #f2f2f2;
+  outline: none;
+}
 /*---------------------------------------------------------*/
 
 .sprite-twitter {

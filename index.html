@@ -85,7 +85,43 @@
       <section class="variety">
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div class="search"><a href="#">Поиск гостиницы в Седоне</a></div>
+        <div class="search"><a href="#">Поиск гостиницы в Седоне</a>
+          <div class="modal-search">
+            <form class="search-form" action="#" method="post">
+              <div class="proposal">
+              <div class="arrival">
+                <label>Дата заезда:
+                  <input type="text" name="arrival-date" placeholder="24 апреля 2016">
+                  <span class="calendar calendar-arrival"></span>
+                </label>
+              </div>
+              <div class="departure">
+                <label>Дата выезда:
+                  <input type="text" name="departure-date" placeholder="4 июля 2016">
+                  <span class="calendar calendar-departure"></span>
+                </label>
+              </div>
+              <div class="adults">
+                <label>Взрослые:
+                  <span class="minus-adults"></span>
+                  <input type="text" name="adults" placeholder="2">
+                  <span class="plus-adults"></span>
+                </label>
+              </div>
+              <div class="kids">
+                <label>Дети:
+                  <div class="kids-label">
+                  <span class="minus-kids"></span>
+                  <span>0</span>
+                  <span class="plus-kids"></span>
+                  </div>
+                </label>
+              </div>
+              </div>
+              <button class="button" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
         <div class="map">
           <a class="js-open-map" href="#"><img src="img/map.jpg" width="1200" height="593" alt="map"></a>
         </div>
@@ -106,15 +142,7 @@
         <a class="link-htmlacademy" href="https://htmlacademy.ru/"><span>Website by<span class="logo-htmlacademy"></span></span></a>
       </div>
     </footer>
-    <div class="modal-search">
-      <form class="search" action="#" method="post">
-        <div class="arrival"><span>Дата заезда 24 апреля 2016<span class="calendar-arrival"></span></span></div>
-        <div class="departure"><span>Дата выезда 4 июля 2016<span class="calendar-departure"></span></span></div>
-        <div class="adults"><span class="minus-adults"></span>Взрослые<span class="plus-adults"></span></div>
-        <div class="kids"><span class="minus-kids"></span>Дети<span class="plus-kids"></span></div>
-        <button class="button" type="submit">Найти</button>
-      </form>
-    </div>
+
   </div>
   </body>
 </html>
