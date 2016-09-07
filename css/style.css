@@ -87,8 +87,12 @@ header nav {
 nav ul {
   /*position: relative;*/
   /*padding: 15px auto;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 56px;
   list-style-type: none;
   padding-left: 0;
@@ -246,6 +250,8 @@ nav li:nth-child(2) {
 }
 
 .advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 256px;
   background-color: #81b3d2;
@@ -268,6 +274,10 @@ nav li:nth-child(2) {
 }
 
 .residence {
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
 }
@@ -384,9 +394,15 @@ p {
 
 footer {
   height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-index {
@@ -421,9 +437,13 @@ footer {
 
 .social-block {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 151px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   font-family: "symbols-sedona";
   font-size: 19px;
@@ -488,6 +508,8 @@ footer {
 
 
 .development span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   /*margin-right: 10px;*/
 }
@@ -564,9 +586,14 @@ footer {
 }
 
 .modal-search .proposal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .proposal div {
@@ -578,20 +605,32 @@ footer {
   text-transform: uppercase;
   font-weight: bold;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .proposal .adults {
   width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 div .adults-input,
 div .kids-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 114px;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   /*justify-content: flex-end;*/
   margin-bottom: 0;
 }
@@ -600,6 +639,8 @@ div .kids-input {
   width: 180px;
   /*width: 230px;*/
   /*padding-left: 52px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
 }
@@ -649,7 +690,7 @@ div .kids-input {
   background: #ebebeb;
   color: #000000;
   border: 2px solid #ebebeb;
-
+  box-sizing: border-box;
 }
 
 .proposal input:focus {
@@ -665,6 +706,8 @@ span.calendar::before {
   left: 430px;
   z-index: 9;
   /*right: -230px;*/
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 21px;
   height: 22px;
@@ -713,15 +756,23 @@ span.calendar::before {
 
 .adults label {
   min-width: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
 .kids label {
   min-width: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -732,6 +783,8 @@ span.calendar::before {
   top: 0;
   /*content: "\e802";*/
   /*display: block;*/
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 38px;
   height: 38px;
@@ -796,42 +849,8 @@ span.calendar::before {
   height: 38px;
   width: 38px;
 }
-/*---------------------------------------------------------*/
 
-.sprite-twitter {
-    width: 17px;
-    height: 15px;
-    background-position: -220px -149px;
-}
 
-.sprite-twitter-down {
-    width: 17px;
-    height: 15px;
-    background-position: -247px -149px;
-}
-
-.sprite-ytube {
-    width: 20px;
-    height: 16px;
-    background-position: -274px -149px;
-}
-
-.sprite-ytube-down {
-    width: 20px;
-    height: 16px;
-    background-position: -304px -149px;
-}
-    .sprite-fb {
-        width: 10px;
-        height: 19px;
-        background-position: -199px -109px;
-    }
-
-    .sprite-fb-down {
-        width: 10px;
-        height: 19px;
-        background-position: -219px -109px;
-    }
 
 /*--------------------HOTELS-------------------------------------------------------*/
 .filter {
@@ -839,14 +858,19 @@ width: 1200px;
 min-height: 220px;
 /*background-color: #477495;*/
 background: #477495 url("../img/filter_background_min.jpg") no-repeat;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
 color: #ffffff;
 }
 
 .filter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 160px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin: 0 72px;
 
 }
@@ -879,7 +903,8 @@ color: #ffffff;
   background-color: #ffffff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
 }
 
@@ -987,15 +1012,25 @@ color: #ffffff;
 
 
 .filter .infrastructure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 254px;
 
 }
 
 .filter .hotel-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 254px;
 
 }
@@ -1040,15 +1075,23 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .hotels article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 72px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 7px 72px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1061,6 +1104,8 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .sorting-type ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 
@@ -1108,8 +1153,14 @@ input[type="checkbox"]:disabled + label::before {
 
 .sorting-type {
 
+  display: -webkit-inline-box;
+
+  display: -ms-inline-flexbox;
+
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sorting-type span {
@@ -1124,8 +1175,12 @@ ul {
   list-style-type: none;
   width: 110px;
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 23px;
 }
 
@@ -1182,6 +1237,8 @@ article h1 {
 }
 
 .details-hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 60px;
 }
