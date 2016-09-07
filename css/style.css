@@ -671,35 +671,6 @@ div .kids-input {
 
 }
 
-.kids label {
-  width: 64px;
-}
-
-.proposal[type="placeholder"] {
-  color: #000000;
-  font-size: 14px;
-  line-height: 26px;
-  padding-top: 6px;
-}
-
-.proposal input[type="placeholder"] {
-  color: #000000;
-}
-
-.proposal input:hover {
-  background: #ebebeb;
-  color: #000000;
-  border: 2px solid #ebebeb;
-  box-sizing: border-box;
-}
-
-.proposal input:focus {
-  background: #ffffff;
-  color: #000000;
-  border-top: 2px solid #e5e5e5;
-  box-sizing: border-box;
-}
-
 span.calendar::before {
   position: absolute;
   top: 6px;
@@ -728,9 +699,11 @@ span.calendar::before {
   height: 38px;
   background: #f2f2f2;
   outline: none;
-  border: none;
+  /*border: none;*/
   padding: 0;
   /*padding-left: 54px;*/
+  border: 2px solid #f2f2f2;
+
 }
 
 .adults input,
@@ -850,6 +823,30 @@ span.calendar::before {
   width: 38px;
 }
 
+.proposal[type="placeholder"] {
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 6px;
+}
+
+.proposal input[type="placeholder"] {
+  color: #000000;
+}
+
+.proposal input:hover {
+  background: #ebebeb;
+  color: #000000;
+  border: 2px solid #ebebeb;
+  box-sizing: border-box;
+}
+
+.proposal input:focus {
+  background: #ffffff;
+  color: #000000;
+  border-top: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
 
 
 /*--------------------HOTELS-------------------------------------------------------*/
