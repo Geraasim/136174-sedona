@@ -161,8 +161,8 @@ nav li:nth-child(2) {
   height: 510px;
   /*position: relative;*/
   /*background-color: #3881d7;*/
-  background-color: #88b7d9;
-  background: url("../img/pallet.png") 0 100% no-repeat,
+  /*background-color: #88b7d9;*/
+  background: #88b7d9 url("../img/pallet.png") 0 100% no-repeat,
   url("../img/welcome.png") no-repeat 50% 75px,
   url("../img/background_photo.jpg") no-repeat;
 
@@ -551,7 +551,7 @@ footer {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
-  /*outline: none;*/
+  outline: none;
 }
 
 .modal-search .button:hover {
@@ -587,20 +587,28 @@ footer {
   display: flex;
 }
 
-.adults-input {
+div .adults-input,
+div .kids-input {
   display: flex;
   width: 114px;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  /*justify-content: flex-end;*/
+  margin-bottom: 0;
 }
 
 .proposal .kids {
   width: 180px;
+  /*width: 230px;*/
+  /*padding-left: 52px;*/
+  display: flex;
+  box-sizing: border-box;
 }
 
 .arrival input,
 .departure input {
   position: relative;
-  width: 331px;
+  /*width: 331px;*/
+  width: 100%;
   height: 38px;
   background: #f2f2f2;
   outline: none;
@@ -616,8 +624,14 @@ footer {
 
 .proposal label {
   position: relative;
-  padding-top: 6px;
+  min-width: 114px;
   max-width: 50%;
+  padding-top: 6px;
+
+}
+
+.kids label {
+  width: 64px;
 }
 
 .proposal[type="placeholder"] {
@@ -667,32 +681,50 @@ span.calendar::before {
 
 
 .kids input {
-  width: 60px;
+  width: 38px;
   height: 38px;
   background: #f2f2f2;
   outline: none;
   border: none;
   padding: 0;
-  padding-left: 54px;
+  /*padding-left: 54px;*/
 }
 
 .adults input,
-.adults button {
+.adults button,
+.kids input,
+.kids button {
   width: 38px;
-
+  height: 38px;
+  box-sizing: border-box;
+  border: 0;
+  text-align: center;
+  background-color: #f2f2f2;
+  outline: none;
+  padding: 0;
 }
 
-.adults button {
+.adults button,
+.kids button {
   position: relative;
 }
 
 
-.kids label,
+
 .adults label {
+  min-width: 114px;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
+
+.kids label {
+  min-width: 64px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
 
 .sign {
   position: absolute;
@@ -713,44 +745,56 @@ span.calendar::before {
 }
 
 .sign:hover,
-.calendar:hover {
+.calendar:hover::before {
   color: #000000;
   z-index: 10;
 
 }
 
 .sign:active,
-span.calendar:active {
+.calendar:active::before {
   color: #81b3d2;
 }
 
 .minus-adults::before {
   position: absolute;
-  left: 130px;
   content: "\e802";
   /*z-index: 11;*/
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 38px;
 }
 
 .plus-adults::before {
   position: absolute;
-  left: 205px;
   content: "\e801";
   /*z-index: 11;*/
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 38px;
 }
 
 
 .minus-kids::before {
   position: absolute;
-  left: 80px;
   content: "\e802";
   /*z-index: 11;*/
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 38px;
 }
 
 .plus-kids::before {
   position: absolute;
-  left: 155px;
   content: "\e801";
   /*z-index: 11;*/
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 38px;
 }
 /*---------------------------------------------------------*/
 
