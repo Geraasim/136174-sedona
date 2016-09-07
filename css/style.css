@@ -160,13 +160,16 @@ nav li:nth-child(2) {
   z-index: 5;
 }
 
+.promo {
+  background: #88b7d9;
+}
 .promo-picture {
   width: 1200px;
   height: 510px;
   /*position: relative;*/
   /*background-color: #3881d7;*/
   /*background-color: #88b7d9;*/
-  background: #88b7d9 url("../img/pallet.png") 0 100% no-repeat,
+  background: url("../img/pallet.png") 0 100% no-repeat,
   url("../img/welcome.png") no-repeat 50% 75px,
   url("../img/background_photo.jpg") no-repeat;
 
