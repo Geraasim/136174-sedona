@@ -161,14 +161,14 @@ nav li:nth-child(2) {
 }
 
 .promo {
-  background: #88b7d9;
+  /*background: #88b7d9;*/
 }
 .promo-picture {
   width: 1200px;
   height: 510px;
   /*position: relative;*/
   /*background-color: #3881d7;*/
-  /*background-color: #88b7d9;*/
+  background-color: #88b7d9;
   background: url("../img/pallet.png") 0 100% no-repeat,
   url("../img/welcome.png") no-repeat 50% 75px,
   url("../img/background_photo.jpg") no-repeat;
@@ -195,6 +195,7 @@ nav li:nth-child(2) {
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 30px;
+  /*background-color: #ffffff;*/
 }
 
 .advantage-header h2 {
