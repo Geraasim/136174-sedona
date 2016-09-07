@@ -148,7 +148,9 @@ nav li:nth-child(2) {
 .logo img {
   position: absolute;
   top: 0;
-  left: 459px;
+  /*left: 459px;*/
+  left: 50%;
+  margin-left: -69px;
   /*margin-left: auto;*/
   /*margin-right: auto;*/
   z-index: 5;
@@ -162,7 +164,7 @@ nav li:nth-child(2) {
   background-color: #88b7d9;
   background: url("../img/pallet.png") 0 100% no-repeat,
   url("../img/welcome.png") no-repeat 50% 75px,
-  url("../img/background photo.jpg") no-repeat;
+  url("../img/background_photo.jpg") no-repeat;
 
 }
 
@@ -251,16 +253,16 @@ nav li:nth-child(2) {
 }
 
 .advantage-picture1 {
-  background-color: #88b7d9;
-  background: url("../img/advantage1.jpg");
+  /*background-color: #88b7d9;*/
+  background: #81b3d2 url("../img/advantage1.jpg");
   width: 800px;
   height: 256px;
 }
 
 .advantage-picture2 {
-  background-color: #88b7d9;
+  /*background-color: #88b7d9;*/
 
-  background: url("../img/advantage2.jpg");
+  background: #81b3d2 url("../img/advantage2.jpg");
   width: 800px;
   height: 256px;
 }
@@ -375,8 +377,8 @@ p {
 .map {
   width: 1200px;
   height: 593px;
-  background-color: #f2f1ef;
-  background: url("../img/map.jpg") no-repeat;
+  /*background-color: #f2f1ef;*/
+  background: #f2f1ef url("../img/map.jpg") no-repeat;
 
 }
 
@@ -582,6 +584,13 @@ footer {
 
 .proposal .adults {
   width: 230px;
+  display: flex;
+}
+
+.adults-input {
+  display: flex;
+  width: 114px;
+  justify-content: flex-end;
 }
 
 .proposal .kids {
@@ -591,7 +600,7 @@ footer {
 .arrival input,
 .departure input {
   position: relative;
-  width: 335px;
+  width: 331px;
   height: 38px;
   background: #f2f2f2;
   outline: none;
@@ -601,12 +610,14 @@ footer {
   padding: 0;
   padding-left: 10px;
 
-  border: none;
+  border: 2px solid #f2f2f2;
+  box-sizing: border-box;
 }
 
 .proposal label {
   position: relative;
   padding-top: 6px;
+  max-width: 50%;
 }
 
 .proposal[type="placeholder"] {
@@ -622,10 +633,14 @@ footer {
 
 .proposal input:hover {
   background: #ebebeb;
+  color: #000000;
+  border: 2px solid #ebebeb;
+
 }
 
-.proposal input:active {
+.proposal input:focus {
   background: #ffffff;
+  color: #000000;
   border-top: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
@@ -650,7 +665,7 @@ span.calendar::before {
 
 }
 
-.adults input,
+
 .kids input {
   width: 60px;
   height: 38px;
@@ -661,6 +676,17 @@ span.calendar::before {
   padding-left: 54px;
 }
 
+.adults input,
+.adults button {
+  width: 38px;
+
+}
+
+.adults button {
+  position: relative;
+}
+
+
 .kids label,
 .adults label {
   display: flex;
@@ -670,6 +696,7 @@ span.calendar::before {
 
 .sign {
   position: absolute;
+  z-index: 10;
   top: 0;
   /*content: "\e802";*/
   /*display: block;*/
@@ -688,10 +715,12 @@ span.calendar::before {
 .sign:hover,
 .calendar:hover {
   color: #000000;
+  z-index: 10;
+
 }
 
 .sign:active,
-.calendar:active {
+span.calendar:active {
   color: #81b3d2;
 }
 
@@ -764,8 +793,8 @@ span.calendar::before {
 .filter {
 width: 1200px;
 min-height: 220px;
-background-color: #477495;
-background: url("../img/filter background min.jpg") no-repeat;
+/*background-color: #477495;*/
+background: #477495 url("../img/filter_background_min.jpg") no-repeat;
 display: flex;
 color: #ffffff;
 }
@@ -1056,8 +1085,8 @@ ul {
   font-size: 23px;
 }
 
-.up-down .icon-up-dir,
-.up-down .icon-down-dir {
+.up-down .icon-up-dir::before,
+.up-down .icon-down-dir::before {
   font-family: "symbols-sedona";
 
   font-size: 23px;
