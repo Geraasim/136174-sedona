@@ -1328,3 +1328,20 @@ article h1 {
   line-height: 28px;
 
 }
+
+.modal-search {
+    animation-name: lift-up;
+    animation-duration: 3s;
+}
+
+@keyframes lift-up {
+    from {
+        transform: translateY(-1000px);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
