@@ -1,0 +1,1 @@
+var search=document.querySelector(".search-link"),searchModal=document.querySelector(".modal-search");search.addEventListener("click",function(a){a.preventDefault(),searchModal.classList.toggle("modal-search-show")});
